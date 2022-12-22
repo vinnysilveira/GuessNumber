@@ -15,11 +15,22 @@
   <body>
     <header>
         <a href="#"><h1>GuessNumber</h1></a>
-
     </header>
 
     <main class="container">
+        <form>
+            <label for="kick">Digite um número (0-10):</label>
+            <input type="numer" id="kick" max="10" placeholder="0">
 
+            <button type="submit">Jogar!</button>
+        </form>
+
+        <section class="result-box" id="result">
+            <h2 id="status">Adivinhe o número sorteado!</h2>
+            <spam id="attemp">Tentativas: 0</spam>
+        </section>
+
+        <button id="btnrestart">Jogar de novo!</button>
     </main>
 
     <footer>
